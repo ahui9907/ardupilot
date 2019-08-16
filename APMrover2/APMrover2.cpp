@@ -121,9 +121,12 @@ void Rover::setup()
     AP_Param::setup_sketch_defaults();
 
     init_ardupilot();
+    init_ardupilot();
 
     // initialise the main loop scheduler
     scheduler.init(&scheduler_tasks[0], ARRAY_SIZE(scheduler_tasks), MASK_LOG_PM);
+
+    //
 }
 
 /*
